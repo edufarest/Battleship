@@ -52,7 +52,7 @@ config :phoenix, :stacktrace_depth, 20
 config :battleship, Battleship.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "shae3LeeRa4e",
   database: "battleship_dev",
   hostname: "localhost",
   pool_size: 10

@@ -1,5 +1,13 @@
 # Battleship
 
+*** TODO: ***
+
+* Update channels to allow multiple games at the same time
+* Chat
+* Add ability to place ships, they are currently preset.
+
+
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

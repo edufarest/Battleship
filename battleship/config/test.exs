@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :battleship, Battleship.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "shae3LeeRa4e",
   database: "battleship_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

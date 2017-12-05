@@ -53,10 +53,64 @@ let socket = new Socket("/socket", {params: {token: window.userToken}})
 
 socket.connect()
 
-// Now that you are connected, you can join channels with a topic:
-let channel = socket.channel("topic:subtopic", {})
-channel.join()
-  .receive("ok", resp => { console.log("Joined successfully", resp) })
-  .receive("error", resp => { console.log("Unable to join", resp) })
+// TODO: add priv channels
+
+// // Now that you are connected, you can join channels with a topic:
+// let lobby = socket.channel("game:lobby", {})
+// lobby.join()
+//   .receive("ok", resp => { console.log("Joined successfully", resp) })
+//   .receive("error", resp => { console.log("Unable to join", resp) })
+//
+// let hitButton = document.querySelector("#hit");
+//
+//
+// // TODO: hardcoded
+// let player = 0;
+//
+// if (hitButton) {
+//     hitButton.addEventListener("click", event => {
+//
+//         let target = $("#target").text().substr(8, 2);
+//
+//         lobby.push("hit", {pos: parseInt(target), player: player})
+//
+//         console.log(target);
+//
+//     })
+//
+// }
+//
+// console.log(target)
+
+import {start} from './app'
+
+
+// let lobby = socket.channel("game:lobby", {})
+//
+//
+// // lobby.on("started", payload => {
+// //     console.log("Got message")
+// //     let pid = '${payload.pid}';
+// //     console.log(pid)
+// // })
+//
+// lobby.on("start", payload => {
+//     console.log("Started Game")
+//
+// })
+//
+// lobby.join()
+//     .receive("ok", resp => { console.log("Joined successfully", resp) })
+//     .receive("error", resp => { console.log("Unable to join", resp) })
+//
+//
+//
+// lobby.push("start");
+
+
+
+
+
+
 
 export default socket

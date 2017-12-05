@@ -1,36 +1,33 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+
+
+<div class="form-check">
+    <input type="text" class="form-control" id="game-id" placeholder="Enter game name">
 </div>
 
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
+<div class="form-check form-inline">
+    <button type="button" class="btn btn-primary" id="start">Start Game</button>
+    <button type="button" class="btn btn-primary" id="join">Join Game</button>
 </div>
+
+<!-- TODO: Implement join method -->
+
+<h1>Rival: </h1>
+
+<div id="rival-board">
+    <p>Rival Board</p>
+</div>
+
+<h1>You:</h1>
+
+<div id="player-board">
+    <p>Player Board</p>
+</div>
+
+<!--<div class="card" style="width: 20rem;">-->
+    <!--<div class="card-body">-->
+        <!--<h4 class="card-title">Your turn</h4>-->
+        <!--<p class="card-text" id="target">Target: 0</p>-->
+        <!--<a href="#" class="btn btn-primary" id="hit">Hit!</a>-->
+    <!--</div>-->
+<!--</div>-->
+
